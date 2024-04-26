@@ -110,3 +110,4 @@ The access token must be included in the `Authorization` header of the request i
 
 1. Download All libraries from above requirements
 2. Run the FastAPI application using the following command: `uvicorn main:app --reload`.
+3. Create MongoDb Dabase URI to connect database.
