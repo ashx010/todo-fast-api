@@ -92,3 +92,21 @@ To access the above endpoints, the user must include an access token in the requ
 ### Token Verification
 
 The access token must be included in the `Authorization` header of the request in the format `Bearer JWT_TOKEN`.
+
+### Requirements
+
+1. **FastAPI**: The main framework used for building the API.
+2. **PyJWT**: For encoding and decoding JSON Web Tokens (JWT) for authentication.
+3. **Passlib**: For secure password hashing.
+4. **Pymongo**: A MongoDB driver for Python, used for interacting with the MongoDB database.
+5. **OAuth2PasswordBearer**: A FastAPI security dependency for handling OAuth2 password flow for token-based authentication.
+6. **BaseModel**: From the Pydantic library, used for defining data models with validation and serialization capabilities.
+7. **OAuth2PasswordRequestForm**: A FastAPI class for handling OAuth2 password request form data.
+8. **Depends**: A FastAPI class used for dependency injection.
+9. **status**: A module from FastAPI for defining HTTP status codes.
+10. **timedelta**: From the datetime module, used for calculating token expiration time.
+
+### How To Run
+
+1. Download All libraries from above requirements
+2. Run the FastAPI application using the following command: `uvicorn main:app --reload`.
